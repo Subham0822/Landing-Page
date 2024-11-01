@@ -8,62 +8,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <header class="header">
         <div class="header-content">
-            <h1>Creative Digital Agency</h1>
-            <p>Transform your digital presence with our innovative solutions and expert team</p>
-            <a href="#contact" class="btn btn-primary">Get Started</a>
-            <a href="#services" class="btn btn-outline">Our Services</a>
+            <h1 class="glitch" data-text="Creative Digital Agency">Creative Digital Agency</h1>
+            <p class="fade-in">Transform your digital presence with our innovative solutions</p>
+            <div class="btn-container">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-outline">Our Services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
         </div>
     </header>
 
     <section class="features">
-        <div class="feature-item">
-            <i class="fas fa-rocket"></i>
+        <div class="feature-item" data-aos="fade-up">
+            <div class="icon-wrapper">
+                <i class="fas fa-rocket"></i>
+            </div>
             <h3>Launch Business</h3>
             <p>Quick and efficient business launching strategies</p>
         </div>
-        <div class="feature-item">
-            <i class="fas fa-headset"></i>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-wrapper">
+                <i class="fas fa-headset"></i>
+            </div>
             <h3>Online Support</h3>
             <p>24/7 dedicated customer support team</p>
         </div>
-        <div class="feature-item">
-            <i class="fas fa-clock"></i>
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-wrapper">
+                <i class="fas fa-clock"></i>
+            </div>
             <h3>Time Management</h3>
             <p>Efficient project delivery and time tracking</p>
         </div>
     </section>
 
     <section class="about">
-        <div class="about-content">
-            <h2>About Us</h2>
+        <div class="about-content" data-aos="fade-right">
+            <h2 class="section-title">About Us</h2>
             <p>15 years of passionate dedication to achieving better results for our clients. We combine creativity with strategic thinking to deliver exceptional digital solutions.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
         </div>
-        <div class="about-image">
-            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Team working">
+        <div class="about-image" data-aos="fade-left">
+            <div class="image-wrapper">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Team working">
+            </div>
         </div>
     </section>
 
     <section class="services" id="services">
+        <h2 class="section-title" data-aos="fade-up">Our Services</h2>
         <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Creative Design</h3>
-                <p>Innovative and eye-catching designs that capture your brand's essence</p>
+            <div class="service-card" data-aos="zoom-in">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Creative Design</h3>
+                    <p>Innovative and eye-catching designs that capture your brand's essence</p>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Custom web solutions built with the latest technologies</p>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom web solutions built with the latest technologies</p>
+                </div>
             </div>
-            <div class="service-card">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Digital Marketing</h3>
-                <p>Strategic marketing campaigns that drive results</p>
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Strategic marketing campaigns that drive results</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
